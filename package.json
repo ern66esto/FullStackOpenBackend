@@ -1,0 +1,30 @@
+{
+  "name": "fullstackopenbackend",
+  "version": "1.0.0",
+  "description": "backend for phonebook frontend part2",
+  "homepage": "https://github.com/ern66esto/FullStackOpenBackend#readme",
+  "bugs": {
+    "url": "https://github.com/ern66esto/FullStackOpenBackend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ern66esto/FullStackOpenBackend.git"
+  },
+  "license": "ISC",
+  "author": "ernesto gonzalez",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -17,7 +17,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rmdir /s /q dist && cd ..\\FullStackOpen\\part2\\phonebook && npm run build && xcopy dist ..\\..\\..\\FullStackOpenBackend\\dist /E /I /Y",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "dependencies": {
     "cors": "^2.8.5",
